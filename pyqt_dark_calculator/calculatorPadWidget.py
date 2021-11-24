@@ -1,3 +1,5 @@
+import os
+
 from PyQt5.QtWidgets import QWidget, QGridLayout, QSizePolicy
 
 from pyqt_dark_calculator.calculatorPadBtnPushButton import CalculatorPadBtnPushButton
@@ -13,7 +15,8 @@ class CalculatorPadWidget(QWidget):
         btn_texts = ['%', 'Rnd', 'C', 'CA', 'Del']+[7, 8, 9, '/', 'Sqrt']+[4, 5, 6, '*', 'x^2']+[1, 2, 3, '-', '1/x']+[0, '.', '±', '+', '=']
         btn_tooltips = ['Mod', 'Round', 'Clear', 'Clear all', 'Delete', 'Division', 'Square root', 'Multiply', 'Power', 'Subtract', 'Inverse', 'Decimal separator', 'Negate', 'Add', '']
 
-        css_file = open('./style/button.css')
+        css_file_path = os.path.join(os.path.dirname(os.path.relpath(__file__, os.getcwd())), r'style\button.css')
+        css_file = open(css_file_path)
         btn_css_code = css_file.read()
         css_file.close()
 
