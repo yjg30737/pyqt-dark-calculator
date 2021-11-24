@@ -3,9 +3,9 @@ import sys, re, math, os
 from PyQt5.QtWidgets import QApplication, QAction, QMenuBar, QMenu, QMainWindow, QMessageBox, QVBoxLayout, QWidget
 from PyQt5.QtCore import Qt
 
-from inputLinedit import InputLineEdit
-from calculatorPadWidget import CalculatorPadWidget
-from resultWidget import ResultWidget
+from .inputLinedit import InputLineEdit
+from .calculatorPadWidget import CalculatorPadWidget
+from .resultWidget import ResultWidget
 
 
 class Calculator(QMainWindow):
