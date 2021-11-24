@@ -7,7 +7,7 @@ setup(
     author_email='yjg30737@gmail.com',
     license='MIT',
     packages=find_packages(),
-    package_data={'style': ['button.css', 'menu.css', 'theme.css']},
+    package_data={'pyqt_dark_calculator.style': ['button.css', 'menu.css', 'theme.css']},
     description='Dark theme calculator made with PyQt5',
     url='https://github.com/yjg30737/pyqt-dark-calculator.git',
     install_requires=[
