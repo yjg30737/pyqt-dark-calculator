@@ -2,7 +2,7 @@ import os
 
 from PyQt5.QtWidgets import QWidget, QGridLayout, QSizePolicy
 
-from .calculatorPadBtnPushButton import CalculatorPadBtnPushButton
+from calculatorPadBtnPushButton import CalculatorPadBtnPushButton
 
 
 class CalculatorPadWidget(QWidget):
