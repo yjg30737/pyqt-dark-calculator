@@ -2,7 +2,7 @@ import os
 
 from PyQt5.QtWidgets import QWidget, QGridLayout, QSizePolicy
 
-from pyqt_dark_calculator.calculatorPadBtnPushButton import CalculatorPadBtnPushButton
+from calculatorPadBtnPushButton import CalculatorPadBtnPushButton
 
 
 class CalculatorPadWidget(QWidget):
