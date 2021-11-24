@@ -6,8 +6,8 @@ setup(
     author='Jung Gyu Yoon',
     author_email='yjg30737@gmail.com',
     license='MIT',
-    data_files=[('', ['style/button.css', 'style/menu.css', 'style/theme.css'])],
     packages=find_packages(),
+    package_data={'style', ['button.css', 'menu.css', 'theme.css']},
     description='Dark theme calculator made with PyQt5',
     url='https://github.com/yjg30737/pyqt-dark-calculator.git',
     install_requires=[
