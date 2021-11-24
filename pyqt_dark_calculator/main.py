@@ -1,4 +1,4 @@
-import sys, re, math
+import sys, re, math, os
 
 from PyQt5.QtWidgets import QApplication, QAction, QMenuBar, QMenu, QMainWindow, QMessageBox, QVBoxLayout, QWidget
 from PyQt5.QtCore import Qt
@@ -38,7 +38,8 @@ class Calculator(QMainWindow):
 
         self.__inputLineEdit.setFocus()
 
-        css_file = open('./style/theme.css')
+        css_file_path = os.path.join(os.path.dirname(os.path.relpath(__file__, os.getcwd())), r'style\theme.css')
+        css_file = open(css_file_path)
         css_code = css_file.read()
         css_file.close()
 
@@ -56,8 +57,8 @@ class Calculator(QMainWindow):
         self.__menubar.addMenu(self.__filemenu)
         self.__filemenu.addAction(self.__newAction)
         self.setMenuBar(self.__menubar)
-
-        css_file = open('./style/menu.css')
+        css_file_path = os.path.join(os.path.dirname(os.path.relpath(__file__, os.getcwd())), r'style\menu.css')
+        css_file = open(css_file_path)
         css_code = css_file.read()
         css_file.close()
 
