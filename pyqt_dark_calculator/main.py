@@ -31,7 +31,7 @@ class Calculator(QMainWindow):
         mainWidget.setLayout(lay)
         self.setCentralWidget(mainWidget)
 
-        self.setWindowTitle('계산기')
+        self.setWindowTitle('Dark calculator')
 
         self.__initMenuUi()
         self.__initBtn()
@@ -47,13 +47,13 @@ class Calculator(QMainWindow):
 
     def __createActions(self):
         # File actions
-        self.__newAction = QAction("새 창", self)
+        self.__newAction = QAction("New...", self)
         self.__newAction.setShortcut("Ctrl+N")
         self.__newAction.triggered.connect(self.__new)
 
     def __createMenuBar(self):
         self.__menubar = QMenuBar()
-        self.__filemenu = QMenu('파일')
+        self.__filemenu = QMenu('File')
         self.__menubar.addMenu(self.__filemenu)
         self.__filemenu.addAction(self.__newAction)
         self.setMenuBar(self.__menubar)
