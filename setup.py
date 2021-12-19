@@ -11,6 +11,7 @@ setup(
     description='Dark theme calculator made with PyQt5',
     url='https://github.com/yjg30737/pyqt-dark-calculator.git',
     install_requires=[
-        'PyQt5>=5.8'
+        'PyQt5>=5.8',
+        'pyqt-resource-helper @ git+https://git@github.com/yjg30737/pyqt-resource-helper.git@main'
     ]
 )

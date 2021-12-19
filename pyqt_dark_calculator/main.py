@@ -1,4 +1,4 @@
-import sys, re, math, os
+import sys, os
 
 from PyQt5.QtWidgets import QApplication, QAction, QMenuBar, QMenu, QMainWindow, QMessageBox, QVBoxLayout, QWidget
 from PyQt5.QtCore import Qt
@@ -6,6 +6,8 @@ from PyQt5.QtCore import Qt
 from pyqt_dark_calculator.inputLinedit import InputLineEdit
 from pyqt_dark_calculator.calculatorPadWidget import CalculatorPadWidget
 from pyqt_dark_calculator.resultWidget import ResultWidget
+
+from pyqt_resource_helper.pyqtResourceHelper import PyQtResourceHelper
 
 
 class Calculator(QMainWindow):
@@ -38,12 +40,7 @@ class Calculator(QMainWindow):
 
         self.__inputLineEdit.setFocus()
 
-        css_file_path = os.path.join(os.path.dirname(os.path.relpath(__file__, os.getcwd())), r'style\theme.css')
-        css_file = open(css_file_path)
-        css_code = css_file.read()
-        css_file.close()
-
-        self.setStyleSheet(css_code)
+        PyQtResourceHelper.setStyleSheet([self], ['style/theme.css'])
 
     def __createActions(self):
         # File actions
@@ -57,12 +54,8 @@ class Calculator(QMainWindow):
         self.__menubar.addMenu(self.__filemenu)
         self.__filemenu.addAction(self.__newAction)
         self.setMenuBar(self.__menubar)
-        css_file_path = os.path.join(os.path.dirname(os.path.relpath(__file__, os.getcwd())), r'style\menu.css')
-        css_file = open(css_file_path)
-        css_code = css_file.read()
-        css_file.close()
 
-        self.__filemenu.setStyleSheet(css_code)
+        PyQtResourceHelper.setStyleSheet([self.__filemenu], ['style/menu.css'])
 
     def __initMenuUi(self):
         self.__createActions()
