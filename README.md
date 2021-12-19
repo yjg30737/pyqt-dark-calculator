@@ -19,6 +19,9 @@ Dark theme calculator made with PyQt5
 ## Requirements
 * PyQt5 >= 5.8
 
+## Included Packages
+* <a href="https://github.com/yjg30737/pyqt-resource-helper.git">pyqt-resource-helper</a>
+
 ## Setup
 ```
 pip install git+https://github.com/yjg30737/pyqt-dark-calculator.git --upgrade
