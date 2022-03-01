@@ -1,7 +1,7 @@
 from PyQt5.QtWidgets import QApplication, QPushButton
 from pyqt_custom_titlebar_window import CustomTitlebarWindow
 from pyqt_dark_gray_theme.darkGrayTheme import *
-from pyqt_dark_calculator import Calculator
+from pyqt_dark_calculator.calculator import Calculator
 
 
 class CalculatorApp(QApplication):
