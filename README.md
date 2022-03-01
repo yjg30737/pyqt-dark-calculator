@@ -34,6 +34,3 @@ if __name__ == "__main__":
     app = CalculatorApp(sys.argv)
     app.exec_()
 ```
-
-## Preview
-![example](./example/example.png)
