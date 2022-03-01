@@ -17,14 +17,16 @@ Dark theme calculator made out of PyQt5
 * Show tooltip(helpful message to how the button works) when mouse cursor hovered to button
 
 ## Requirements
-* PyQt5 >= 5.8
+* PyQt5 >= 5.15
 
 ## Included Packages
+* <a href="https://github.com/yjg30737/pyqt-dark-gray-theme.git">pyqt-dark-gray-theme</a>
+* <a href="https://github.com/yjg30737/pyqt-custom-titlebar-window.git">pyqt-custom-titlebar-window</a>
 * <a href="https://github.com/yjg30737/pyqt-resource-helper.git">pyqt-resource-helper</a>
 
 ## Setup
 ```
-pip install git+https://github.com/yjg30737/pyqt-dark-calculator.git --upgrade
+pip3 install git+https://github.com/yjg30737/pyqt-dark-calculator.git --upgrade
 ```
 
 ## Usage
