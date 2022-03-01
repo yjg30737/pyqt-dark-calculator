@@ -5,9 +5,6 @@ PyQt dark theme calculator
 ## Note
 I'm working on "new" feature(It doesn't work properly).
 
-## General Info
-Dark theme calculator made out of PyQt5
-
 ## Feature
 * Basic operation supported by most of the calculators(e.g. Arithmetic operation, square root, round)
 * Supporting parentheses calculation
