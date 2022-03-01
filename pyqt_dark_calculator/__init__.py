@@ -1,3 +1,4 @@
+from .calculatorApp import *
 from .calculator import *
 from .calculatorPadBtnPushButton import *
 from .calculatorPadWidget import *
