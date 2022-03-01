@@ -27,6 +27,7 @@ class CalculatorPadWidget(QWidget):
                 btn.setToolTip(btn_tooltips[tooltips_idx])
                 tooltips_idx += 1
 
+            PyQtResourceHelper.setStyleSheet([btn], ['style/calculator_pad_button.css'])
             self.__number_btns.append(btn)
 
         gridLayout = QGridLayout()
