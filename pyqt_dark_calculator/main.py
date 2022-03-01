@@ -40,8 +40,6 @@ class Calculator(QMainWindow):
 
         self.__inputLineEdit.setFocus()
 
-        PyQtResourceHelper.setStyleSheet([self], ['style/theme.css'])
-
     def __createActions(self):
         # File actions
         self.__newAction = QAction("New...", self)
@@ -54,8 +52,6 @@ class Calculator(QMainWindow):
         self.__menubar.addMenu(self.__filemenu)
         self.__filemenu.addAction(self.__newAction)
         self.setMenuBar(self.__menubar)
-
-        PyQtResourceHelper.setStyleSheet([self.__filemenu], ['style/menu.css'])
 
     def __initMenuUi(self):
         self.__createActions()

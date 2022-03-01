@@ -20,7 +20,6 @@ class CalculatorPadWidget(QWidget):
         for i in btn_texts:
             btn = CalculatorPadBtnPushButton(str(i))
             btn.setSizePolicy(QSizePolicy.MinimumExpanding, QSizePolicy.MinimumExpanding)
-            PyQtResourceHelper.setStyleSheet([btn], ['style/button.css'])
 
             if isinstance(i, int):
                 pass
