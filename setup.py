@@ -7,6 +7,7 @@ setup(
     author_email='yjg30737@gmail.com',
     license='MIT',
     packages=find_packages(),
+    package_data={'pyqt_dark_calculator.ico': ['calculator.svg']},
     description='PyQt5 dark calculator',
     url='https://github.com/yjg30737/pyqt-dark-calculator.git',
     install_requires=[
