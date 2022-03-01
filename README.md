@@ -5,13 +5,6 @@ PyQt dark theme calculator
 ## Note
 I'm working on "new" feature(It doesn't work properly).
 
-## Table of Contents
-* [General Info](#general-info)
-* [Requirements](#requirements)
-* [Setup](#setup)
-* [Usage](#usage)
-* [Preview](#preview)
-
 ## General Info
 Dark theme calculator made out of PyQt5
 
