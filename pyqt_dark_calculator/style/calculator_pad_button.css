@@ -3,6 +3,7 @@ QPushButton
 border:0; 
 background:transparent;
 padding:1px;
+color: #CCCCCC;
 }
 QPushButton:hover
 {
