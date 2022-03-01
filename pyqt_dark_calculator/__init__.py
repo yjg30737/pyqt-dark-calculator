@@ -1,4 +1,4 @@
-from .main import *
+from .calculator import *
 from .calculatorPadBtnPushButton import *
 from .calculatorPadWidget import *
 from .inputLinedit import *

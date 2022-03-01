@@ -7,8 +7,6 @@ from pyqt_dark_calculator.inputLinedit import InputLineEdit
 from pyqt_dark_calculator.calculatorPadWidget import CalculatorPadWidget
 from pyqt_dark_calculator.resultWidget import ResultWidget
 
-from pyqt_resource_helper.pyqtResourceHelper import PyQtResourceHelper
-
 
 class Calculator(QMainWindow):
     def __init__(self):
