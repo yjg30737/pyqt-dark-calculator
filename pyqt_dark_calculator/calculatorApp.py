@@ -1,3 +1,5 @@
+import os, sys, inspect
+
 from PyQt5.QtWidgets import QApplication, QPushButton
 from pyqt_custom_titlebar_window import CustomTitlebarWindow
 from pyqt_dark_gray_theme.darkGrayTheme import *
@@ -30,5 +32,6 @@ class CalculatorApp(QApplication):
 
     def __setCustomTitleBar(self, main_window):
         self.__titleBarWindow = CustomTitlebarWindow(main_window)
-        self.__titleBarWindow.setTopTitleBar(icon_filename='ico/calculator.svg')
+        caller_path = os.path.dirname(inspect.getframeinfo(sys._getframe(1)).filename)
+        self.__titleBarWindow.setTopTitleBar(icon_filename=os.path.join(caller_path, 'ico\\calculator.svg'))
         self.__titleBarWindow.setButtons()
