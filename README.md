@@ -34,3 +34,7 @@ if __name__ == "__main__":
     app = CalculatorApp(sys.argv)
     app.exec_()
 ```
+
+Result
+
+![image](https://user-images.githubusercontent.com/55078043/156103071-ecf9ed4d-2c52-4120-b4c8-6c0894fcaa88.png)
