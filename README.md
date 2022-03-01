@@ -25,6 +25,7 @@ pip3 install git+https://github.com/yjg30737/pyqt-dark-calculator.git --upgrade
 ```
 
 ## Usage
+Code Sample
 ```python
 from pyqt_dark_calculator.calculatorApp import CalculatorApp
 
