@@ -8,7 +8,7 @@
 * [Preview](#preview)
 
 ## General Info
-Dark theme calculator made with PyQt5
+Dark theme calculator made out of PyQt5
 
 ## Feature
 * Basic operation supported by most of the calculators(e.g. Arithmetic operation, square root, round)
@@ -18,6 +18,9 @@ Dark theme calculator made with PyQt5
 
 ## Requirements
 * PyQt5 >= 5.8
+
+## Included Packages
+* <a href="https://github.com/yjg30737/pyqt-resource-helper.git">pyqt-resource-helper</a>
 
 ## Setup
 ```
