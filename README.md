@@ -3,7 +3,7 @@
 PyQt dark theme calculator
 
 ## Note
-I'm working on "new" feature(It doesn't work properly).
+I'm working on "new" feature(It doesn't work properly. Not only that, there are a lot of errors. I will fix those errors as fast as i can.
 
 ## Feature
 * Basic operation supported by most of the calculators(e.g. Arithmetic operation, square root, round)
