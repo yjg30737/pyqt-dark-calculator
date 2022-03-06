@@ -15,6 +15,7 @@ setup(
         'PyQt5>=5.15',
         'pyqt-style-setter @ git+https://git@github.com/yjg30737/pyqt-style-setter.git@main',
         'pyqt-custom-titlebar-setter @ git+https://git@github.com/yjg30737/pyqt-custom-titlebar-setter.git@main',
+        'pyqt-custom-titlebar-window @ git+https://git@github.com/yjg30737/pyqt-custom-titlebar-window.git@main',
         'pyqt-resource-helper @ git+https://git@github.com/yjg30737/pyqt-resource-helper.git@main'
     ]
 )
