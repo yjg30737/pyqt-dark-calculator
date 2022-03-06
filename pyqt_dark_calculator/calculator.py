@@ -45,8 +45,8 @@ class Calculator(QMainWindow):
         self.__newAction.triggered.connect(self.__new)
 
     def __createMenuBar(self):
-        self.__menubar = QMenuBar()
-        self.__filemenu = QMenu('File')
+        self.__menubar = self.menuBar()
+        self.__filemenu = QMenu('File', self)
         self.__menubar.addMenu(self.__filemenu)
         self.__filemenu.addAction(self.__newAction)
         self.setMenuBar(self.__menubar)
