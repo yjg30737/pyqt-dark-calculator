@@ -65,10 +65,6 @@ class Calculator(QMainWindow):
     def __new(self):
         self.newClicked.emit()
 
-    def __new(self):
-        self.__new_window = Calculator()
-        self.__new_window.show()
-
     def __btnClicked(self, text):
         line_edit_text = self.__inputLineEdit.text()
         last_n = self.__inputLineEdit.getLastOperand()
