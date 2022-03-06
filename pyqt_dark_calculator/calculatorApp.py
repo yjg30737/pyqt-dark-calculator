@@ -11,14 +11,9 @@ from pyqt_custom_titlebar_window import CustomTitlebarWindow
 class CalculatorApp(QApplication):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.__windowDict = dict()
-        mainWindow = Calculator()
-        mainWindow.newClicked.connect(self.__new)
-        StyleSetter.setWindowStyle(mainWindow, exclude_type_lst=[QAbstractButton])
-        titleBarWindow = CustomTitlebarSetter.getCustomTitleBar(mainWindow, icon_filename='ico/calculator.svg')
-        titleBarWindow.show()
-        self.__windowDict[titleBarWindow] = titleBarWindow.winId()
         qApp.installEventFilter(self)
+        self.__windowDict = dict()
+        self.__new()
 
     def __new(self):
         mainWindow = Calculator()
