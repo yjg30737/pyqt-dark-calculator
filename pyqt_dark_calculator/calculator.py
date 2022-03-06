@@ -1,7 +1,7 @@
 import sys, os
 
 from PyQt5.QtWidgets import QApplication, QAction, QMenuBar, QMenu, QMainWindow, QMessageBox, QVBoxLayout, QWidget
-from PyQt5.QtCore import Qt
+from PyQt5.QtCore import Qt, pyqtSignal
 
 from pyqt_dark_calculator.inputLinedit import InputLineEdit
 from pyqt_dark_calculator.calculatorPadWidget import CalculatorPadWidget
@@ -9,6 +9,8 @@ from pyqt_dark_calculator.resultWidget import ResultWidget
 
 
 class Calculator(QMainWindow):
+    newClicked = pyqtSignal()
+
     def __init__(self):
         super().__init__()
         self.__initUi()
@@ -59,6 +61,9 @@ class Calculator(QMainWindow):
         self.__btns = self.__numpadWidget.getBtns()
         for btn in self.__btns:
             btn.padBtnClicked.connect(self.__btnClicked)
+
+    def __new(self):
+        self.newClicked.emit()
 
     def __new(self):
         self.__new_window = Calculator()
