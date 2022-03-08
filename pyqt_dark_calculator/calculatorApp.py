@@ -1,5 +1,4 @@
 from PyQt5.QtWidgets import QApplication, QAbstractButton, qApp
-from pyqt_dark_gray_theme.darkGrayTheme import *
 from pyqt_dark_calculator.calculator import Calculator
 
 from pyqt_style_setter import StyleSetter
