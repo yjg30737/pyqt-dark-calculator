@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='pyqt-dark-calculator',
-    version='0.3.2',
+    version='0.3.3',
     author='Jung Gyu Yoon',
     author_email='yjg30737@gmail.com',
     license='MIT',
