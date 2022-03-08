@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QApplication, QAbstractButton, qApp
+from PyQt5.QtWidgets import QApplication, QAbstractButton
 from pyqt_dark_calculator.calculator import Calculator
 
 from pyqt_style_setter import StyleSetter
@@ -9,7 +9,7 @@ from pyqt_custom_titlebar_window import CustomTitlebarWindow
 class CalculatorApp(QApplication):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        qApp.installEventFilter(self)
+        self.installEventFilter(self)
         self.__windowDict = dict()
         self.__new()
 
