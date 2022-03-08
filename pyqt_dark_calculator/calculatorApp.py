@@ -25,8 +25,9 @@ class CalculatorApp(QApplication):
         if isinstance(obj, CustomTitlebarWindow):
             if e.type() == 17:
                 self.__windowDict[obj] = obj.winId()
-            elif e.type() == 19:
-                w = self.__windowDict.get(obj, 0)
-                if w:
-                    self.__windowDict.pop(obj)
+            elif e.type() == 217:
+                if e.surfaceEventType() == 1:
+                    w = self.__windowDict.get(obj, 0)
+                    if w:
+                        self.__windowDict.pop(obj)
         return super().eventFilter(obj, e)
