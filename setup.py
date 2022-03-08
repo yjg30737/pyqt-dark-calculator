@@ -9,7 +9,7 @@ setup(
     packages=find_packages(),
     package_data={'pyqt_dark_calculator.ico': ['calculator.svg'],
                   'pyqt_dark_calculator.style': ['calculator_pad_button.css']},
-    description='PyQt5 dark calculator',
+    description='PyQt Dark Calculator',
     url='https://github.com/yjg30737/pyqt-dark-calculator.git',
     install_requires=[
         'PyQt5>=5.15',
