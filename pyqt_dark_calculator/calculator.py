@@ -1,11 +1,13 @@
 import sys, os
 
-from PyQt5.QtWidgets import QApplication, QAction, QMenuBar, QMenu, QMainWindow, QMessageBox, QVBoxLayout, QWidget
+from PyQt5.QtWidgets import QApplication, QAction, QMenuBar, QAbstractButton, QMenu, QMainWindow, QMessageBox, \
+    QVBoxLayout, QWidget
 from PyQt5.QtCore import Qt, pyqtSignal
 
 from pyqt_dark_calculator.inputLinedit import InputLineEdit
 from pyqt_dark_calculator.calculatorPadWidget import CalculatorPadWidget
 from pyqt_dark_calculator.resultWidget import ResultWidget
+from pyqt_style_setter import StyleSetter
 
 
 class Calculator(QMainWindow):
@@ -39,6 +41,8 @@ class Calculator(QMainWindow):
         self.__initBtn()
 
         self.__inputLineEdit.setFocus()
+
+        StyleSetter.setWindowStyle(self, exclude_type_lst=[QAbstractButton])
 
     def __createActions(self):
         # File actions

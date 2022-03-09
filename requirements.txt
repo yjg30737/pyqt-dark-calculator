@@ -1,3 +1,4 @@
+git+https://git@github.com/yjg30737/pyqt-style-setter.git@main
 git+https://git@github.com/yjg30737/pyqt-resource-helper.git@main
 git+https://git@github.com/yjg30737/python-get-absolute-resource-path.git@main
 git+https://git@github.com/yjg30737/pyqt-new-window-handler.git@main
