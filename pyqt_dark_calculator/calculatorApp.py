@@ -1,3 +1,4 @@
+from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QApplication, QAbstractButton
 from pyqt_dark_calculator.calculator import Calculator
 
@@ -18,14 +19,22 @@ class CalculatorApp(QApplication):
         mainWindow.newClicked.connect(self.__new)
         StyleSetter.setWindowStyle(mainWindow, exclude_type_lst=[QAbstractButton])
         titleBarWindow = CustomTitlebarSetter.getCustomTitleBar(mainWindow, icon_filename='ico/calculator.svg')
+        titleBarWindow.setAttribute(Qt.WA_DeleteOnClose)
+        titleBarWindow.destroyed.connect(self.__destroyed)
         titleBarWindow.show()
 
     def eventFilter(self, obj, e):
         if isinstance(obj, CustomTitlebarWindow):
+            # catch the QShowEvent of CustomTitlebarWindow
             if e.type() == 17:
-                self.__windowDict[obj] = obj.winId()
-            elif e.type() == 19:
-                w = self.__windowDict.get(obj, 0)
-                if w:
-                    self.__windowDict.pop(obj)
+                w = self.__getInnerWidget(obj)
+                self.__windowDict[w] = obj
         return super().eventFilter(obj, e)
+
+    def __destroyed(self, w):
+        w = self.__getInnerWidget(w)
+        del(self.__windowDict[w])
+
+    def __getInnerWidget(self, w):
+        inner_widget = [c for c in w.children() if isinstance(c, Calculator)][0]
+        return inner_widget
