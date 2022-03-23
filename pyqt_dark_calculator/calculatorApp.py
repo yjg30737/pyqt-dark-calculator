@@ -8,5 +8,4 @@ from pyqt_new_window_handler import NewWindowHandler
 class CalculatorApp(QApplication):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.__handler = NewWindowHandler(Calculator, get_absolute_resource_path('ico/calculator.svg'),
-                                          exclude_type_lst=[QAbstractButton])
+        self.__handler = NewWindowHandler(Calculator, get_absolute_resource_path('ico/calculator.svg'))
