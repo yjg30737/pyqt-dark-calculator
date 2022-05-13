@@ -1,11 +1,11 @@
-from PyQt5.QtWidgets import QApplication, QAbstractButton
+from PyQt5.QtWidgets import QApplication
 from pyqt_dark_calculator.calculator import Calculator
 
-from python_get_absolute_resource_path import get_absolute_resource_path
+import absresgetter
 from pyqt_new_window_handler import NewWindowHandler
 
 
 class CalculatorApp(QApplication):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.__handler = NewWindowHandler(Calculator, get_absolute_resource_path('ico/calculator.svg'))
+        self.__handler = NewWindowHandler(Calculator, absresgetter.getabsres('ico/calculator.svg'))
