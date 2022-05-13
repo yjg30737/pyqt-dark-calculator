@@ -16,6 +16,6 @@ setup(
         'pyqt-style-setter>=0.0.1',
         'pyqt-resource-helper>=0.0.1',
         'python-get-absolute-resource-path>=0.0.1',
-        'pyqt-new-window-handler @ git+https://git@github.com/yjg30737/pyqt-new-window-handler.git@main'
+        'pyqt-new-window-handler>=0.0.1'
     ]
 )
