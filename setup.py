@@ -15,7 +15,6 @@ setup(
         'PyQt5>=5.15',
         'pyqt-style-setter>=0.0.1',
         'pyqt-resource-helper>=0.0.1',
-        'absresgetter>=0.0.1',
         'pyqt-new-window-handler>=0.0.1'
     ]
 )
