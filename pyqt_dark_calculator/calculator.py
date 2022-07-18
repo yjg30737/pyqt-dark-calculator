@@ -40,7 +40,7 @@ class Calculator(QMainWindow):
         self.__initMenuUi()
         self.__initBtn()
 
-        self.__inputLineEdit.setFocus()
+        self.setFocusProxy(self.__inputLineEdit)
 
         StyleSetter.setWindowStyle(self, exclude_type_lst=[QAbstractButton])
 
