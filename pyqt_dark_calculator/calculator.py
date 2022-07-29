@@ -1,6 +1,6 @@
-import sys, os
+import sys, math
 
-from PyQt5.QtWidgets import QApplication, QAction, QMenuBar, QAbstractButton, QMenu, QMainWindow, QMessageBox, \
+from PyQt5.QtWidgets import QApplication, QAction, QAbstractButton, QMenu, QMainWindow, QMessageBox, \
     QVBoxLayout, QWidget
 from PyQt5.QtCore import Qt, pyqtSignal
 
@@ -132,10 +132,3 @@ class Calculator(QMainWindow):
                 value_text = '{0:0.0f}'.format(value_number)
         self.__resultWidget.setText(formula_text, value_text)
         self.__inputLineEdit.setText(value_text)
-
-
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    calculator = Calculator()
-    calculator.show()
-    app.exec_()
